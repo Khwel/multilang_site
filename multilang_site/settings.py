@@ -29,7 +29,7 @@ env = environ.Env(
 )
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('django-insecure-slz62p(3k@s85*ljqf0&ihhi&7x60-tppszkmvyh3(k=da=w$v')
+SECRET_KEY = 'django-insecure-slz62p(3k@s85*ljqf0&ihhi&7x60-tppszkmvyh3(k=da=w$v'
 
 # Lisez le fichier .env
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
