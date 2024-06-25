@@ -9,6 +9,96 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   
 </head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du blog */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Sélecteur de langue */
+.language-selector {
+    margin-bottom: 20px;
+}
+
+.language-selector p {
+    font-weight: bold;
+}
+
+.language-selector ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.language-selector li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.language-selector li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.language-selector li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Liste des articles */
+.posts-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    color: #666;
+}
+
+.post-date {
+    font-style: italic;
+    color: #999;
+}
+</style>
 <body>
     <div class="container">
         <h1>{% trans "Blog Posts" %}</h1>
@@ -16,9 +106,9 @@
             <p>{% trans "Select your language:" %}</p>
             <ul>
                 <form action="" method="post">
-                      <li><a href="http://127.0.0.1:8000/en">English</a></li>
-                <li><a href="http://127.0.0.1:8000/fr">Français</a></li>
-                <li><a href="http://127.0.0.1:8000/es">Español</a></li>
+                      <li><a href="https://multilang-site-0kom.onrender.com/en">English</a></li>
+                <li><a href="https://multilang-site-0kom.onrender.com/fr">Français</a></li>
+                <li><a href="https://multilang-site-0kom.onrender.com/es">Español</a></li>
                 </form>
               
             </ul>
