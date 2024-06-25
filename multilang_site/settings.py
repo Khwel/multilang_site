@@ -36,7 +36,8 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # Utilisez les variables d'environnement pour configurer Django
 DEBUG = env.bool('DEBUG', default=True)
 
-ALLOWED_HOSTS = env.list('*', default=['multilang-site-0kom.onrender.com'])
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['127.0.0.1', 'localhost'])
+
 
 # Application definition
 
@@ -87,8 +88,16 @@ WSGI_APPLICATION = 'multilang_site.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db(),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bdd_multilang_site',  # Nom de la base de données
+        'USER': 'bdd_multilang_site_user',  # Nom d'utilisateur
+        'PASSWORD': '6C1tnaC9O7jQawpjaCGBCvxGjrknuzRq',  # Mot de passe
+        'HOST': 'dpg-cpsmgqaj1k6c738qhl60-a.oregon-postgres.render.com',  # Hôte (URL sans le préfixe postgresql://)
+        'PORT': '5432',  # Port par défaut pour PostgreSQL
+    }
 }
+
 
 
 # Password validation

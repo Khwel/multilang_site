@@ -8,7 +8,7 @@ from django.utils.translation import activate
 from django.urls import reverse
 from .forms import LanguageForm
 from django.conf import settings
-from .models import Chat
+from .models import Chat,BlogPost
 
 
 client = OpenAI(api_key="")
