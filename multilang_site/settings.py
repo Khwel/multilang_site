@@ -36,7 +36,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # Utilisez les variables d'environnement pour configurer Django
 DEBUG = env.bool('DEBUG', default=True)
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['127.0.0.1', 'localhost'])
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['127.0.0.1', 'localhost','multilang-site-0kom.onrender.com'])
 
 
 # Application definition
