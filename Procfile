@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:4000
+web: gunicorn multilang_site.wsgi:application
