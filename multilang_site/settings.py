@@ -24,8 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 env = environ.Env(
-    # Définissez les variables d'environnement et fournissez les valeurs par défaut
-    DEBUG=(bool, False)
+
 )
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -35,7 +34,7 @@ SECRET_KEY = 'django-insecure-slz62p(3k@s85*ljqf0&ihhi&7x60-tppszkmvyh3(k=da=w$v
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Utilisez les variables d'environnement pour configurer Django
-DEBUG = env('DEBUG')
+DEBUG = env.bool('DEBUG', default=True)
 
 ALLOWED_HOSTS = env.list('*', default=['multilang-site-0kom.onrender.com'])
 
@@ -88,7 +87,7 @@ WSGI_APPLICATION = 'multilang_site.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+    'default': env.db(),
 }
 
 
