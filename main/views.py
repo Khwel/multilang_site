@@ -1,16 +1,11 @@
-from openai import OpenAI
 from django.shortcuts import render, redirect   
-from .models import BlogPost
 from django.http import JsonResponse
-
 from django.utils import translation
 from django.utils.translation import activate
 from django.urls import reverse
-
 from django.conf import settings
 from .models import Chat,BlogPost
-from google.cloud import dialogflow
-from google.api_core.exceptions import InvalidArgument
+
 
 
 client = OpenAI(api_key="")
