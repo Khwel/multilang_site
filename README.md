@@ -25,7 +25,9 @@ Puis essayez les différentes langues de traductions
 En bas a droite vous pouvez y trouver une bulle bleu pour le chatbot il ne répondra qu'à 2 questions et un remerciments :
 
 quel sont les problème de ce projet ?
+
 quel sont les codes sur le quel Erwan a travaillez mais pas garder a la fin ?
+
 Remerciments
 
 Pour ce qui est d'ajoutez un Post j'ai fais le choix de passer par l'admin django ajouter "admin/" a la fin de l'url
