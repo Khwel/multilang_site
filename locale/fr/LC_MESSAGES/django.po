@@ -52,7 +52,7 @@ msgstr ""
 
 #: main/templates/blog_list.html:33
 msgid "Published on"
-msgstr ""
+msgstr "Publier le"
 
 #: myenv/Lib/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
