@@ -7,7 +7,8 @@ Pour ce qui vont cloner le projet  veuillez a télécharger python et pip
 Apres ce si veuillez lancer l'environnement virtuel Windows : python -m venv myenv
 myenv\Scripts\activate
 
-Linux: python3 -m venv myenv
+Linux: python3 -m venv myenv*
+
 source myenv/bin/activate
 
 
@@ -38,4 +39,5 @@ Cliquez sur enregistrez et cliquez sur voir le site pour revenir sur les blogpos
 Ceci est la fin de la démo.
 
 Je suis décu d'avoir perdu plus de 15h de travail pour essayer d'implementez ChatGpt alors que ce n'est pas gratuit.
+
 J'aurai voulu faire plus de CSS ou meme avoir une qualité et propreté du code plus importante comme le dossier Static que je n'ai pas réussi a appelez dans le HTML
