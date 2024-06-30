@@ -2,13 +2,15 @@ from openai import OpenAI
 from django.shortcuts import render, redirect   
 from .models import BlogPost
 from django.http import JsonResponse
-from django.http import HttpResponse
+
 from django.utils import translation
 from django.utils.translation import activate
 from django.urls import reverse
-from .forms import LanguageForm
+
 from django.conf import settings
 from .models import Chat,BlogPost
+from google.cloud import dialogflow
+from google.api_core.exceptions import InvalidArgument
 
 
 client = OpenAI(api_key="")
@@ -60,9 +62,8 @@ def change_language(request):
         return response
 
 
-
-
-
+def chat_view(request):
+    return render(request, 'chat.html')
 
 
 
