@@ -7,7 +7,7 @@ Pour ce qui vont cloner le projet  veuillez a télécharger python et pip
 Apres ce si veuillez lancer l'environnement virtuel Windows : python -m venv myenv
 myenv\Scripts\activate
 
-Linux: python3 -m venv myenv*
+Linux: python3 -m venv myenv
 
 source myenv/bin/activate
 
