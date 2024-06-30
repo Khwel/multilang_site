@@ -8,7 +8,6 @@ from .models import Chat,BlogPost
 
 
 
-client = OpenAI(api_key="")
 def bot(request):
     return render(request, 'chatbot.html')
 
